@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <h1>参加団体アプリ</h1>
-    <img class="homepic" src="./assets/homepic.png">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
 
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+}
 </script>
 
 <style>
@@ -17,9 +24,5 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: black;
-}
-.homepic{
-  width: 100%;
 }
 </style>
